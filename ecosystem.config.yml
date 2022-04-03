@@ -1,0 +1,13 @@
+apps:
+  - script: ./dist/index.js
+    name: 'Chalenge API Avenue'
+    watch: true
+    instances: 2
+    exec_mode: cluster
+    env:
+      NODE_ENV: 'production'
+      PORT: '8080'
+      HOST: 'localhost'
+      ENABLE_HTTPS: 'false'
+      CERT_FILE: './cert/cert.pem'
+      KEY_FILE: './cert/key.pem'

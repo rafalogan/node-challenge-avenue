@@ -1,0 +1,16 @@
+[
+  {
+    "id": "5f41c4efe8eeb81e5502b0f3",
+    "name": "Julie",
+    "lastName": "Schoen",
+    "salary": 9208,
+    "age": 34
+  },
+  {
+    "id": "5f41c4efe8eeb81e5502b0f4",
+    "name": "Maximillian",
+    "lastName": "Wilderman",
+    "salary": 7746,
+    "age": 28
+  }
+]
