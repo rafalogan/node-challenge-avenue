@@ -73,6 +73,8 @@ npm run style:fix # to fix the stylelint
 * [GET /analysts/:sortProperty](http://localhost:8080/analysts/:sortProperty) - get analyst order by properties 'id', 'name', 'lastName', 'salary' or 'age'
 * [GET /analysts/:sortProperty/?order=](http://localhost:8080/analysts/:sortProperty/?order=) - get analyst order by property on order 'asc' or 'desc';
 
+* [GET /total-salary](http://localhost:8080/total-salary) - get total salary of all employees
+* [GET /total-salary/:role](http://localhost:8080/total-salary/:role) - get total salary of group employees by role 'manager' or 'analyst'
 
 * GET /others - return status code 404
 * method not allowed - return status code 405;

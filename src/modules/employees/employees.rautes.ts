@@ -55,14 +55,14 @@ export class EmployeesRautes extends AbstractRoutes {
 			.purge(methodNotAllowed);
 
 		this.app
-			.route('/salary')
+			.route('/total-salary')
 			.get(this.employesController.findTotalSalary.bind(this.employesController))
 			.post(methodNotAllowed)
 			.put(methodNotAllowed)
 			.delete(methodNotAllowed)
 			.purge(methodNotAllowed);
 		this.app
-			.route('/salary/:role')
+			.route('/total-salary/:role')
 			.get(this.employesController.findTotalSalary.bind(this.employesController))
 			.post(methodNotAllowed)
 			.put(methodNotAllowed)

@@ -1,4 +1,5 @@
 import request from 'supertest';
+
 import { appController } from '../../src/server';
 import {
 	expectedGetAnalysts,
@@ -59,22 +60,22 @@ describe('Test of Server Application', () => {
 		expect(response.body).toEqual(expectedGetManager);
 	});
 
-	it('Should return expected data of get for /salary', async () => {
-		const response = await request(app).get('/salary');
+	it('Should return expected data of get for /total-salary', async () => {
+		const response = await request(app).get('/total-salary');
 
 		expect(response.status).toBe(200);
 		expect(response.body).toEqual(expectedGetTotalSalary);
 	});
 
-	it('Should return expected data of get for /salary/analyst', async () => {
-		const response = await request(app).get('/salary/analyst');
+	it('Should return expected data of get for /total-salary/analyst', async () => {
+		const response = await request(app).get('/total-salary/analyst');
 
 		expect(response.status).toBe(200);
 		expect(response.body).toEqual(expectedGetTotalSalaryAnalyst);
 	});
 
-	it('Should return expected data of get for /salary/manager', async () => {
-		const response = await request(app).get('/salary/manager');
+	it('Should return expected data of get for /total-salary/manager', async () => {
+		const response = await request(app).get('/total-salary/manager');
 
 		expect(response.status).toBe(200);
 		expect(response.body).toEqual(expectedGetTotalSalaryManager);
