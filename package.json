@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "npm run build && pm2-runtime start ecosystem.config.yml",
+    "start": "npm run build && npx pm2-runtime start ecosystem.config.yml",
     "lint": "npx eslint . --ext .ts",
     "lint:fix": "npx eslint . --ext .ts --fix",
-    "style": "prettier --check 'src/**/*.ts' 'test/**/*ts'",
-    "style:fix": "prettier --write 'src/**/*.ts' 'test/**/*ts'",
+    "style": "npx prettier --check 'src/**/*.ts' 'test/**/*ts'",
+    "style:fix": "npx prettier --write 'src/**/*.ts' 'test/**/*ts'",
     "dev": "nodemon ./index.ts",
-    "build": "rm -rf ./dist && tsc",
+    "build": "rm -rf ./dist && npx tsc",
     "test": "NODE_ENV=test npx jest --no-cahce --runInBand --watchAll --config ./jest.config.ts",
     "test:cov": "NODE_ENV=test npx jest --no-cahce --config ./jest.config.ts --coverage"
   },
